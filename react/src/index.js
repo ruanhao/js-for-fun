@@ -2,6 +2,8 @@ console.log("hello world");
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+// 第二种创建组件的方式
+import MyComponent from './components/MyComponent.jsx';
 
 // Create virtual dom
 // const myDiv = React.createElement('div', {"id": "mydiv"}, 'Test div');
@@ -51,4 +53,5 @@ ReactDOM.render(<div>
                 Component Test
                 <Hello {...user}></Hello>
                 <Hello name="Mary" age="20" gender="female"></Hello>
+                <MyComponent name="Linda" age="22" gender="female"></MyComponent>
                 </div>, document.getElementById('component'));
