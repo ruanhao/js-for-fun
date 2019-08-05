@@ -4,8 +4,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Create virtual dom
-const myH1 = React.createElement('h1', null, 'Test H1');
-const myDiv = React.createElement('div', null, 'Test div', myH1);
+// const myDiv = React.createElement('div', {"id": "mydiv"}, 'Test div');
+
+const myDiv = <div id='mydiv'>Test div</div>;
 
 
 // Render virtual dom
