@@ -3,7 +3,7 @@ console.log("hello world");
 import React from 'react';
 import ReactDOM from 'react-dom';
 // 第二种创建组件的方式
-import MyComponent from './components/MyComponent.jsx';
+import MyComponent from './components/MyComponent';
 
 // Create virtual dom
 // const myDiv = React.createElement('div', {"id": "mydiv"}, 'Test div');
