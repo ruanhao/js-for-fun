@@ -1,6 +1,6 @@
 console.log("hello world");
 
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 // 第二种创建组件的方式
 // @ 表示项目根目录中的 src 目录
@@ -50,9 +50,22 @@ const user = {
     "gender": "male"
 };
 
+// // 使用 class 创建组件的方式
+class MyComponent2 extends Component {
+    render() {
+        return <div>Hello {this.props.name} ({this.props.age})</div>;
+    }
+}
+
 ReactDOM.render(<div>
                 Component Test
                 <Hello {...user}></Hello>
                 <Hello name="Mary" age="20" gender="female"></Hello>
                 <MyComponent name="Linda" age="22" gender="female"></MyComponent>
                 </div>, document.getElementById('component'));
+
+
+ReactDOM.render(<div>
+                <h1>Create Component by class</h1>
+                <MyComponent2 name="Jolin" age="10"></MyComponent2>
+                </div>, document.getElementById('component2'));
