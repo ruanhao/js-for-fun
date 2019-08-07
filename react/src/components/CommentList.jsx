@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import CommentItem from '@/components/CommentItem';
+import commentListCss from '@/css/commentList.css';
+const assert = require('assert');
+console.log(commentListCss);
+assert.deepEqual({}, commentListCss);
 
 
 export default class CommentList extends Component {
@@ -19,7 +23,7 @@ export default class CommentList extends Component {
 
     render() {
         return <div>
-            <h1>评论列表组件</h1>
+            <h1 className="title">评论列表组件</h1>
             {this.state.commentList.map(item => <CommentItem {...item} key={item.id}></CommentItem>)}
             </div>;
     }
