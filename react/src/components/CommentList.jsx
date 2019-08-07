@@ -20,7 +20,7 @@ export default class CommentList extends Component {
 
     render() {
         return <div>
-            <h1 className={commentListCss.title}>评论列表组件</h1>
+            <h1 className={commentListCss.title + " test"}>评论列表组件</h1>
             {this.state.commentList.map(item => <CommentItem {...item} key={item.id}></CommentItem>)}
             </div>;
     }

@@ -4,3 +4,7 @@
     text-align: center;
     font-weight: 200;
 }
+
+:global(.test) {
+    font-style: italic;
+}
