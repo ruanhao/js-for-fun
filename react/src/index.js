@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 // 第二种创建组件的方式
 // @ 表示项目根目录中的 src 目录
 import MyComponent from '@/components/MyComponent';
+import CommentList from '@/components/CommentList';
 
 // Create virtual dom
 // const myDiv = React.createElement('div', {"id": "mydiv"}, 'Test div');
@@ -69,3 +70,8 @@ ReactDOM.render(<div>
                 <h1>Create Component by class</h1>
                 <MyComponent2 name="Jolin" age="10"></MyComponent2>
                 </div>, document.getElementById('component2'));
+
+ReactDOM.render(<div>
+                <hr/>
+                <CommentList></CommentList>
+                </div>, document.getElementById('comment'));
