@@ -21,6 +21,7 @@ export default class CommentList extends Component {
     render() {
         return <div>
             <h1 className={commentListCss.title + " test"}>评论列表组件</h1>
+            <button onClick={() => console.log("push")}>按钮</button>
             {this.state.commentList.map(item => <CommentItem {...item} key={item.id}></CommentItem>)}
             </div>;
     }
