@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 // @ 表示项目根目录中的 src 目录
 import MyComponent from '@/components/MyComponent';
 import CommentList from '@/components/CommentList';
+import Counter from '@/components/Counter';
 
 // Create virtual dom
 // const myDiv = React.createElement('div', {"id": "mydiv"}, 'Test div');
@@ -75,3 +76,9 @@ ReactDOM.render(<div>
                 <hr/>
                 <CommentList></CommentList>
                 </div>, document.getElementById('comment'));
+
+ReactDOM.render(<div>
+                <hr/>
+                <h1>测试 onClick</h1>
+                <Counter></Counter>
+                </div>, document.getElementById('counter'));
