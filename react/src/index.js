@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import MyComponent from '@/components/MyComponent';
 import CommentList from '@/components/CommentList';
 import Counter from '@/components/Counter';
+import Echo from '@/components/Echo';
 
 // Create virtual dom
 // const myDiv = React.createElement('div', {"id": "mydiv"}, 'Test div');
@@ -82,3 +83,9 @@ ReactDOM.render(<div>
                 <h1>测试 onClick</h1>
                 <Counter></Counter>
                 </div>, document.getElementById('counter'));
+
+ReactDOM.render(<div>
+                <hr/>
+                <h1>测试 onChange</h1>
+                <Echo></Echo>
+                </div>, document.getElementById('echo'));
